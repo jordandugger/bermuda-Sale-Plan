@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blue Haven Sale Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f6f5f1;--card:#fff;--ink:#1c1c1a;--muted:#6b6a64;--line:#e4e2db;--accent:#1f5f8b;--accent-soft:#e6f0f7;--warn:#9a3b1f;--warn-soft:#fbeae3;--ok:#2f6b3a;--ok-soft:#e6f2e8;--amber:#8a6a12;--amber-soft:#fbf2d9;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:980px;margin:0 auto;padding:28px 20px 60px}
+  header h1{font-size:26px;margin:0 0 4px}
+  header p{margin:0;color:var(--muted);font-size:14px}
+  .tabs{display:flex;gap:6px;margin:22px 0 18px;border-bottom:1px solid var(--line)}
+  .tab{background:none;border:none;padding:10px 16px;font:inherit;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px}
+  .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+  .panel{display:none}.panel.active{display:block}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:14px}
+  .card h2{font-size:17px;margin:0 0 10px}
+  .card h3{font-size:13px;margin:14px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .big{font-size:15px;font-weight:600;padding:14px 16px;border-radius:8px;background:var(--accent-soft);border-left:4px solid var(--accent);margin-bottom:14px}
+  .flag{background:var(--warn-soft);border-left:4px solid var(--warn)}
+  .good{background:var(--ok-soft);border-left:4px solid var(--ok)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+  .stat{background:var(--bg);border-radius:8px;padding:12px 14px}
+  .stat .l{font-size:12px;color:var(--muted)}.stat .v{font-size:20px;font-weight:700}
+  .stat .s{font-size:12px;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  td.num,th.num{text-align:right;white-space:nowrap}
+  ul,ol{margin:6px 0 6px 20px;padding:0}li{margin:4px 0}
+  .pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+  .pill.w{background:var(--warn-soft);color:var(--warn)}.pill.g{background:var(--ok-soft);color:var(--ok)}.pill.a{background:var(--amber-soft);color:var(--amber)}
+  .tl{border-left:2px solid var(--line);margin-left:8px;padding-left:16px}
+  .tl div{position:relative;margin-bottom:12px}
+  .tl div::before{content:"";position:absolute;left:-22px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+  .tl b{display:block}
+  .note{font-size:13px;color:var(--muted)}
+  .chk{list-style:none;margin-left:0}
+  .chk li{padding-left:26px;position:relative}
+  .chk li::before{content:"";position:absolute;left:0;top:5px;width:14px;height:14px;border:2px solid var(--accent);border-radius:3px}
+  @media (max-width:640px){.wrap{padding:18px 12px 40px}td,th{padding:6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Blue Haven Sale Plan</h1>
+  <p>6513 Bermuda Lane, Flowery Branch GA (Lake Lanier). Updated Nov 21, 2026. Tab 1 is the meeting sheet. Tab 2 is the full research.</p>
+</header>
+
+<div class="tabs" role="tablist">
+  <button class="tab active" data-t="tldr">Meeting sheet</button>
+  <button class="tab" data-t="full">Full plan</button>
+</div>
+
+<!-- ================= MEETING SHEET ================= -->
+<section class="panel active" id="tldr">
+
+  <div class="card">
+    <h2>1. The decision</h2>
+    <div class="big">Sell. List late Feb to March 2027 at about $1,849,000 furnished. Expect $1.70M to $1.82M. Hybrid sale: flat-fee MLS, 2% to 2.5% to the buyer's agent, our own Georgia closing attorney. Target close April to June 2027.</div>
+    <div class="grid">
+      <div class="stat"><div class="l">Realistic sale</div><div class="v">$1.75M</div><div class="s">Range $1.70M to $1.82M</div></div>
+      <div class="stat"><div class="l">Net to us at $1.75M</div><div class="v">About $593K</div><div class="s">After Chase payoff ($1.107M), before taxes and repairs</div></div>
+      <div class="stat"><div class="l">Carry until close</div><div class="v">$10.7K/mo</div><div class="s">Chase PITI at 7.375%. No STR income on the books in 2026.</div></div>
+      <div class="stat"><div class="l">Pre-sale repair budget</div><div class="v">$30K to $50K</div><div class="s">Placeholder until Trice and the moisture contractor quote</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. Gates: nothing lists until these are done</h2>
+    <p class="note">Both the dock permit and the moisture issue will surface in buyer due diligence. Listing before they are closed means a walk-away or a large credit.</p>
+    <table>
+      <tr><th>Gate</th><th>Status</th><th>Next action</th><th>Owner</th></tr>
+      <tr>
+        <td><b>A. Corps permit reinstated in writing</b><br><span class="note">Permit D00742. Packet hand-delivered late Sept (signed permit, license, TIN form, $485 paid on Erin's Amex).</span></td>
+        <td><span class="pill a">Waiting on Corps</span></td>
+        <td>Email sent Nov 21 to Area 6 ranger desk asking: reinstated in Erin's name? deadline for verification sheet? ranger of record? If no reply by Dec 1, call 770-904-3262 (Area 6 direct 770-904-3258).</td>
+        <td>Jordan</td>
+      </tr>
+      <tr>
+        <td><b>B. Dock rotated to 18'L x 24'W, gangway cut to 20'</b><br><span class="note">We signed for Option 1. Dock was moved out Nov 14 under the Dock Move Program, but the report only says "moved, gangway relocated to beach."</span></td>
+        <td><span class="pill w">Unknown</span></td>
+        <td>Email sent Nov 21 to Trice: did the 11/14 move include the rotation and cut? If not, get a quote and date. Follow up by phone Dec 1.</td>
+        <td>Jordan</td>
+      </tr>
+      <tr>
+        <td><b>C. Riprap and cove cleanup</b><br><span class="note">$5,990 riprap (77 LF) + $2,500 cove cleanup, both accepted 7/29. Required because the steps were replaced.</span></td>
+        <td><span class="pill w">Not started</span></td>
+        <td>Get a start date from Trice. Pay on completion.</td>
+        <td>Jordan</td>
+      </tr>
+      <tr>
+        <td><b>D. Punch list cleared</b><br><span class="note">Second-level decking repair, string lights and plastic chairs off, footpath boarding removed, old decking debris off public land, permit tag displayed.</span></td>
+        <td><span class="pill w">Open</span></td>
+        <td>Include in Trice's quote. Erin to confirm what is physically on the dock now.</td>
+        <td>Jordan / Erin</td>
+      </tr>
+      <tr>
+        <td><b>E. Gazebo, fire table, upper-deck electrical approved or removed</b><br><span class="note">Likely need written ranger approval. Not yet raised with the Corps.</span></td>
+        <td><span class="pill w">Not raised</span></td>
+        <td>Decide today whether to ask the ranger or remove before inspection (see section 3).</td>
+        <td>Erin decides</td>
+      </tr>
+      <tr>
+        <td><b>F. Verification sheet signed, "active, no open violations" in hand</b><br><span class="note">Intentionally withheld until A through E are done.</span></td>
+        <td><span class="pill">Last step</span></td>
+        <td>Sign and return after the corrective work. This letter goes in the listing packet.</td>
+        <td>Erin signs</td>
+      </tr>
+      <tr>
+        <td><b>G. Upstairs moisture diagnosed, fixed, clearance letter</b><br><span class="note">No quote or contractor visit found in Jordan's Gmail (May to Nov).</span></td>
+        <td><span class="pill w">No quote</span></td>
+        <td>Erin: check your inbox and texts for any quote. Then book an independent moisture and mold assessor (not a remediator). Fix source, remediate if needed, get clearance letter, keep invoices.</td>
+        <td>Erin</td>
+      </tr>
+      <tr>
+        <td><b>H. Pre-listing inspection: home, septic, pool, HVAC</b><br><span class="note">Baseline is the June 30, 2023 Platinum Plus report. Est. $1,500 to $2,500.</span></td>
+        <td><span class="pill">December</span></td>
+        <td>Schedule after G is fixed so the report comes back clean.</td>
+        <td>Erin</td>
+      </tr>
+      <tr>
+        <td><b>I. Listing agreement check</b><br><span class="note">No signed agreement found in Gmail or Drive.</span></td>
+        <td><span class="pill a">Confirm</span></td>
+        <td>Check DocuSign, Authentisign, dotloop, paper. If signed, request mutual termination (GAR F152). If not, send a short note confirming no agreement.</td>
+        <td>Erin</td>
+      </tr>
+      <tr>
+        <td><b>J. Georgia seller's attorney retained</b><br><span class="note">Required: Georgia is an attorney-closing state. About $500 to $1,500.</span></td>
+        <td><span class="pill">Next 2 weeks</span></td>
+        <td>Pick a Hall County or north Georgia real estate attorney. Ask fee and whether they will also close.</td>
+        <td>Jordan</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>3. Decisions needed from Erin today</h2>
+    <ol>
+      <li><b>Hybrid vs full-service agent.</b> Default is hybrid (about $54K better at $1.85M). Fallback to a 1% to 1.5% Lanier specialist if the dock is still messy at listing or we cannot run showings from Ohio.</li>
+      <li><b>Gazebo and fire table.</b> Ask the ranger for written approval, or pull them before the verification inspection. Asking risks a no and a delay; pulling costs the staging photos.</li>
+      <li><b>Moisture.</b> Who finds the assessor and when. This is the longest-lead item after the dock.</li>
+      <li><b>Airbnb calendar.</b> Stop taking bookings past the expected close (April to June), or keep hosting and write reservation handling into the contract.</li>
+      <li><b>Who owns the Corps thread.</b> Erin is the permittee and signs everything. Jordan runs follow-ups unless Erin wants it.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>4. Timeline</h2>
+    <div class="tl">
+      <div><b>Now to Dec 1</b>Corps and Trice replies. Dec 1 reminder set: call if silent. Erin checks for moisture quote. Listing agreement check.</div>
+      <div><b>December</b>Dock rotation, riprap, cove cleanup, punch list on one Trice schedule. Moisture assessor out. Attorney retained. Pre-listing inspection once moisture is fixed.</div>
+      <div><b>January</b>Written "active, no open violations" from the Corps. Data room built (24 months Airbnb payouts, STR license, tax and insurance, Corps file, inspections, furnishings inventory). I draft the F301 disclosure for the attorney.</div>
+      <div><b>Early February</b>Dock and drone photos refreshed after the correction. Listing copy with dock specifics and STR numbers.</div>
+      <div><b>Late Feb to March</b>List on FMLS + GAMLS via flat-fee broker, plus LakeHouse.com, Rabbu, lake and STR Facebook groups, past guests.</div>
+      <div><b>April to June 2027</b>Close. 10 to 14 day due diligence, Corps docs delivered within 5 days of binding, cash 2 to 4 weeks, financed 4 to 6.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>5. Money</h2>
+    <table>
+      <tr><th>Sale price</th><th class="num">Full-service agent 5.5%</th><th class="num">Hybrid (recommended)</th><th class="num">FSBO, no buyer agent</th></tr>
+      <tr><td>$1,750,000</td><td class="num">$542K</td><td class="num"><b>$593K</b></td><td class="num">$637K</td></tr>
+      <tr><td>$1,850,000</td><td class="num">$637K</td><td class="num"><b>$691K</b></td><td class="num">$737K</td></tr>
+    </table>
+    <p class="note">Net after Chase payoff and closing costs, before income taxes and repairs. The no-buyer-agent column looks best but 85% to 90% of $1.8M lake buyers come with an agent; skipping them usually costs more than 2.5%.</p>
+    <h3>Repair budget (for Aaron's model)</h3>
+    <ul>
+      <li>Riprap $5,990 + cove cleanup $2,500 = $8,490 accepted, unpaid.</li>
+      <li>Dock rotation + gangway cut + punch list: no quote yet.</li>
+      <li>Moisture diagnosis and fix: no quote yet.</li>
+      <li>Inspections: $1,500 to $2,500.</li>
+      <li>Working placeholder: $30K to $50K total.</li>
+    </ul>
+    <h3>Taxes</h3>
+    <p class="note">Investment property bought July 2023 at $1.58M. Depreciation recapture plus capital gains, Georgia 4.99%. A 1031 exchange defers all of it but the intermediary must be engaged before closing. CPA to size.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Small stuff and watch-outs</h2>
+    <ul class="chk">
+      <li>Kwikset lock is throwing low-battery and invalid-access alerts. Swap the battery before any showings.</li>
+      <li>Cancel at close: Red Oak Sanitation (trash), Hospitable (STR software), Marine Specialties $1,200/yr dock inspection program.</li>
+      <li>Phishing: a Nov 19 email from "Southeastern Dock Supply" (Pay App #266) linked to a non-Microsoft domain. Not acted on. If a dock supply bill is real, call them at 678-456-8367.</li>
+      <li>Fix the MLS facts this time: private double-deck dock, permit number, water depth, pool, 7,440 total SF / 5,740 above grade. Prior listings said "Water Frontage: None."</li>
+      <li>Confirm vesting (Erin individually vs LLC) so the right party signs. The 2023 report spells it "Diamond."</li>
+      <li>Disclose everything on the F301: moisture, Corps history, STR history, septic, pool. Georgia requires disclosure of known hidden defects even as-is.</li>
+    </ul>
+    <h3>Contacts</h3>
+    <ul>
+      <li>Trice Cannon, Marine Specialties: trice.cannon@marinespecialties.net, office 770-531-7735 x119, cell 770-776-7039.</li>
+      <li>USACE Lanier Project Mgmt Office, 1050 Buford Dam Rd, Buford: 770-945-9531. Shoreline help desk 770-904-3262. Area 6: lanierslm-area6@usace.army.mil, 770-904-3258. Ranger Robert Kilpatrick.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= FULL PLAN ================= -->
+<section class="panel" id="full">
+
+  <div class="card">
+    <h2>1. Property value</h2>
+    <h3>Subject facts</h3>
+    <table>
+      <tr><td>Parcel</td><td>08141 006012A, Hall County, Paradise Point area, 0.87 acre</td></tr>
+      <tr><td>House</td><td>6 bed / 4 bath, built 1978, full renovation 2018, heated saltwater pool, septic, public water, 2-car garage, private dock with upper-deck gazebo, Malibu on a hoist lift</td></tr>
+      <tr><td>Square footage</td><td>Sources conflict: 5,640 / 7,346 / 7,440 total with 5,740 above grade. Use 7,440 total, 5,740 above grade, footnote the basement.</td></tr>
+      <tr><td>Sale history</td><td>Sold May 2022 $1,550,000. Relisted Oct 2022 at $1,699,990, sold July 26, 2023 for $1,580,000 (asked $1,675,000, 94 DOM, 6% under list).</td></tr>
+      <tr><td>AVMs</td><td>Redfin $1,798,307. Trulia $1,686,700. Zillow, Realtor.com, Homes.com and Hall County qPublic 2026 FMV not verified. Pull qPublic before pricing (GA assesses at 40% of FMV).</td></tr>
+    </table>
+    <h3>Comps (private dock, $1.4M to $2.5M)</h3>
+    <table>
+      <tr><th>Address</th><th class="num">Price</th><th>Date</th><th>Notes</th></tr>
+      <tr><td>5611 Lanyard Ct, Gainesville</td><td class="num">$1,900,000</td><td>Jul 2026</td><td>6/6.5, 6,815 SF, 2001, double-slip deep-water dock, pool. Listed $2.2M, sold 12% under last list.</td></tr>
+      <tr><td>3655 Cameron Cir, Gainesville</td><td class="num">$1,850,000</td><td>Apr 2026</td><td>6/5, 5,260 SF, 2020 build, dock in 25 ft water. 1 DOM.</td></tr>
+      <tr><td>8190 Old Mill Dr, Gainesville</td><td class="num">$1,560,000</td><td>Oct 2026</td><td>4/3.5, 4,054 SF, single-slip dock with party deck.</td></tr>
+      <tr><td>6023 Bateau Dr, Flowery Branch</td><td class="num">$1,400,000</td><td>Spring 2026</td><td>5/6, 6,100 SF, 1993, covered single-slip. Listed $1,495,000.</td></tr>
+    </table>
+    <p class="note">Blue Haven sits below the two newer deep-water comps and above Bateau. The steep walk to the dock and the open Corps file hold it back. If the dock is still non-compliant at listing, expect $1.55M to $1.70M or a heavy credit.</p>
+    <h3>Market and timing</h3>
+    <ul>
+      <li>Lake Lanier overall: about 7.7 months inventory Q2 2026 (buyer market). Luxury $1M+: 6 to 7 months supply, 70 to 80 DOM, about 50% cash, sale-to-list about 92%.</li>
+      <li>Seasonality is strong: lakefront Q1 2026 averaged 122 DOM, Q2 68. Buyers want to see water and dock. Late Feb to March launch catches the close-before-Memorial-Day crowd. A December listing just accumulates stale days.</li>
+    </ul>
+    <h3>STR rules a buyer inherits (Hall County Ch. 5.100)</h3>
+    <ul>
+      <li>STRs allowed in all residential districts. Annual business license per home, zoning affidavit, $75 inspection, 24/7 local contact within 1 hour, 2-night minimum, occupancy cap 2 per bedroom + 3, neighbor notification.</li>
+      <li>Hotel-motel tax rose 5% to 8% on July 1, 2026. GA SB 570 trafficking-prevention training required from July 1, 2026. State 4% sales tax and $5/night fee still apply.</li>
+      <li>Buyer needs their own license. Confirm the parcel is unincorporated Hall County, not inside Flowery Branch city limits.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2. FSBO vs agent</h2>
+    <ul>
+      <li>Post-NAR settlement (Aug 2024): buyer-agent pay cannot be advertised on FMLS or GAMLS. Buyers sign brokerage agreements before touring. Sellers may still pay the buyer side, negotiated in the offer as a concession.</li>
+      <li>Georgia average total commission about 5.74% (2.89% list, 2.85% buyer). On $1.8M every 1% is $18K; the listing-side saving is about $52K.</li>
+      <li>NAR 2025: FSBO was 5% of sales, 88% of buyers used an agent, 40% of FSBO sellers did not actively market. Nothing suggests FSBO outperforms in luxury lakefront.</li>
+      <li>Middle options: Redfin, Clever partner agents, 1% listing brokers, flat-fee full-service brokers ($3K to $7K). A 1% to 1.5% Lanier specialist may earn it by fielding dock-permit questions. Interview two or three; none were verified by name.</li>
+    </ul>
+    <h3>Flat-fee MLS options in Georgia</h3>
+    <table>
+      <tr><th>Service</th><th>Cost</th><th>Notes</th></tr>
+      <tr><td>beycome</td><td>$99 / $399 / $999, $0 at close</td><td>GAMLS listing, syndication, GA forms in dashboard, $25 cancel fee</td></tr>
+      <tr><td>Houzeo</td><td>$399 (Atlanta from $249)</td><td>Watch 0.3% to 0.5% surcharges on some plans and on FMLS. Material at $1.8M.</td></tr>
+      <tr><td>Homecoin</td><td>$149</td><td>12-month term, contract help $99 to $299 extra</td></tr>
+      <tr><td>HomeZu</td><td>$299</td><td>FMLS "where available"</td></tr>
+      <tr><td>Georgia Flat Fee MLS</td><td>$269 to $329</td><td>6-month term, 50 photos</td></tr>
+    </table>
+    <p class="note">Lanier trades heavily on FMLS. Our 2022 and 2023 listings were on both FMLS and GAMLS. Insist on both, and get any FMLS surcharge in writing.</p>
+    <h3>Decision framework</h3>
+    <table>
+      <tr><th>Situation</th><th>Path</th></tr>
+      <tr><td>Permit reinstated, compliance in writing, moisture fixed and documented, we can run showings</td><td><b>Hybrid: flat-fee MLS (FMLS + GAMLS) + 2% to 2.5% buyer concession + closing attorney</b></td></tr>
+      <tr><td>Dock still in corrective status at listing, or we cannot run showings on a steep lake lot</td><td>1% to 1.5% lake-specialist broker</td></tr>
+      <tr><td>No showings after 45 days in spring, or two buyers walk on dock or inspection</td><td>Switch to full-service Lanier specialist</td></tr>
+      <tr><td>Known buyer (neighbor, past guest, investor)</td><td>Pure FSBO, attorney-drafted contract, no buyer agent</td></tr>
+    </table>
+    <h3>Existing agent</h3>
+    <ul>
+      <li>No listing agreement found in Gmail or Drive. Check e-sign platforms and paper.</li>
+      <li>GAR F101 has no seller early-termination right. Unilateral termination extends the protected period (remaining term + protected days); contract with a buyer in that window and we owe commission. A mutual termination (GAR F152) ends it entirely.</li>
+      <li>If nothing was signed, send a written note confirming that, to avoid a later procuring-cause claim.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. What a Georgia FSBO sale looks like</h2>
+    <h3>Closing attorney (mandatory)</h3>
+    <ul>
+      <li>Georgia Supreme Court (UPL Advisory Opinion 2003-2): only a licensed GA attorney may close a real estate transaction or prepare the deed. No separate escrow or title company; title insurance is issued through the attorney's agency.</li>
+      <li>The attorney runs title, prepares the deed, collects the Chase payoff, files the PT-61 transfer tax return, disburses, records.</li>
+      <li>GAR F201 gives the buyer the right to select the closing attorney; in a financed deal the attorney represents the lender. Buyer usually pays the closing fee; seller pays deed prep. Retain our own seller's counsel now, about $500 to $1,500.</li>
+    </ul>
+    <h3>Forms</h3>
+    <ul>
+      <li>GAR F201 Purchase and Sale Agreement (6-1-26 revision) is what every buyer agent will submit. GAR forms are member-licensed; flat-fee services like beycome include them, and any GA attorney can supply them. No generic forms.</li>
+      <li>GAR F301 Seller's Property Disclosure. Georgia is caveat emptor but known latent defects must be disclosed even as-is (Wilhite v. Mays). Disclose: upstairs moisture (cause, fix, invoices, any mold testing), Corps file (D00742 history, 9/17/24 cancellation, reinstatement, deficiency notice, dock correction, riprap status), septic, pool, insurance claims, STR history, any unpermitted dock mods.</li>
+    </ul>
+    <h3>Contract flow</h3>
+    <ol>
+      <li>Offer on F201 with exhibits: F301, legal description, financing exhibit, appraisal contingency, furnishings bill of sale.</li>
+      <li>Binding Agreement Date: every deadline counts from it.</li>
+      <li>Due diligence 10 to 14 days: buyer can walk for any reason and keep earnest money. Expect inspection, septic, pool, dock, Corps permit verification, STR income review.</li>
+      <li>Earnest money 1% to 2%, held by the closing attorney (FSBO) or buyer's broker.</li>
+      <li>Financing and appraisal: about half of buyers are cash. Furnishings and STR income will not appraise.</li>
+      <li>Amendment to address concerns, then close.</li>
+    </ol>
+    <h3>Stipulations to expect or propose</h3>
+    <ul>
+      <li>Seller delivers active USACE Shoreline Use Permit, approved site plan, and written no-open-violations confirmation within 5 days of Binding Agreement Date.</li>
+      <li>Buyer files USACE change-of-ownership promptly after closing.</li>
+      <li>Furnishings convey as-is for $0 separate consideration. Handling of future Airbnb reservations.</li>
+    </ul>
+    <h3>What Claude can and cannot do</h3>
+    <ul>
+      <li>Can: summarize and compare offers, deadline calendar, plain-English F201 walkthrough, draft counters and stipulations for attorney review, draft F301 answers, listing copy and data room, emails to agents, Corps and contractors, net math.</li>
+      <li>Cannot: act as attorney, close, prepare or supervise the deed, hold earnest money, guarantee enforceability. Those are the practice of law in Georgia. Claude drafts, attorney approves, we sign.</li>
+    </ul>
+    <h3>Timeline</h3>
+    <table>
+      <tr><th>Phase</th><th>Duration</th></tr>
+      <tr><td>Pre-listing fixes (dock, riprap, moisture, inspection)</td><td>6 to 12 weeks, in progress</td></tr>
+      <tr><td>List to contract (spring, priced right)</td><td>2 to 10 weeks</td></tr>
+      <tr><td>Contract to close</td><td>3 to 6 weeks (cash 2 to 4, financed 4 to 6)</td></tr>
+      <tr><td><b>Total</b></td><td><b>About 4 to 6 months, closing April to June 2027</b></td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>4. Where to list</h2>
+    <table>
+      <tr><th>Channel</th><th>Cost</th><th>Notes</th></tr>
+      <tr><td>FMLS + GAMLS via flat-fee broker</td><td>$99 to $999+</td><td>The channel that matters. Feeds Zillow, Realtor.com, Redfin, Homes.com. Only a licensed broker can enter the MLS.</td></tr>
+      <tr><td>Zillow / Trulia FSBO post</td><td>Free</td><td>Lands only in the "Other listings" tab, not on Realtor.com or Redfin. Use alongside the MLS, not instead.</td></tr>
+      <tr><td>Realtor.com, Redfin, Homes.com</td><td>Free via MLS</td><td>No meaningful direct FSBO path</td></tr>
+      <tr><td>LakeHouse.com</td><td>Paid (verify)</td><td>Lake-specific; active Lanier listings at $1,849,000 show the right audience</td></tr>
+      <tr><td>Lake Lanier Facebook groups, Marketplace, Lake Lanier Association, neighborhood pages</td><td>Free</td><td>Neighbors, boat owners, repeat guests</td></tr>
+      <tr><td>Past Airbnb guests</td><td>Free</td><td>Some of the best FSBO leads. Respect Airbnb messaging rules.</td></tr>
+      <tr><td>Rabbu, AirDNA listings, BiggerPockets, STR Facebook groups</td><td>Free to low</td><td>Investor reach. Lead with verified 24-month financials.</td></tr>
+      <tr><td>FSBO.com, ForSaleByOwner.com</td><td>Paid</td><td>Low traffic at this price. Optional.</td></tr>
+      <tr><td>Sotheby's, Compass, luxury portals</td><td>n/a</td><td>Agent-only. The MLS listing reaches their agents anyway.</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>5. Dock permit and repairs: full status (Nov 21)</h2>
+    <h3>IDs</h3>
+    <p class="note">Shoreline Use Permit D00742, DA License DACW01-3-23-3467, Invoice 2-158937. Permittee Erin Dimond, Jordan authorized party. Ranger Robert Kilpatrick, Area 6.</p>
+    <h3>Two problems</h3>
+    <ul>
+      <li>Administrative: permit reissued to Erin 7/26/2023, never signed, $485 never paid, so the Corps sent a cancellation/final notice 9/17/2024.</li>
+      <li>Physical: approved config is 18'L x 24'W with a 20' walkway. Actual dock is 24'L x 18'W with a 30' walkway. We signed for Kilpatrick's Option 1 (rotate + cut to 20'). Option 2 was declined by signing and cannot be reopened.</li>
+    </ul>
+    <h3>Done</h3>
+    <ul>
+      <li>Late Sept 2026: hand-delivered to Lanier Project Management Office: signed permit, signed license, TIN form, cover letter, $485 payment (charged to Erin's Amex the week of Sept 22, shows as "Lake Lanier").</li>
+      <li>Deficiency verification sheet intentionally withheld until corrective work is done (cover letter explains this).</li>
+      <li>Fixed shoreline steps replaced by Marine Specialties (invoiced Oct 1, $3,250). This triggered the riprap requirement.</li>
+      <li>Dock moved out Nov 14 under the Dock Move Program (lake low; shore side was 0 ft, now 3 ft; lake side 6.5 ft, now 10 ft).</li>
+    </ul>
+    <h3>Open</h3>
+    <ul>
+      <li>No written confirmation from the Corps that the packet was processed or the permit is reinstated.</li>
+      <li>Unknown whether the Nov 14 move rotated the dock and cut the gangway, or just relocated it.</li>
+      <li>Punch list: second-level decking repair, string lights and plastic chairs off, footpath boarding removed, old decking debris off public land, permit tag displayed.</li>
+      <li>Riprap ($5,990, 77 LF) and cove cleanup ($2,500), both accepted 7/29: no evidence either has started.</li>
+      <li>Gazebo, propane fire table, any new upper-deck electrical: likely need written ranger approval or removal before the verification inspection. Not yet raised. Power to the dock also brings the Exhibit C electrical certification into play.</li>
+      <li>Final step: sign and return the verification sheet, get written "active, no open violations."</li>
+    </ul>
+    <h3>In motion (sent Nov 21, Erin CC'd)</h3>
+    <ul>
+      <li>Email to Area 6 ranger desk: reinstated in Erin's name? deadline for verification sheet? ranger of record?</li>
+      <li>Email to Trice: did the 11/14 move include rotation and gangway cut, what is left on the punch list, has he talked to Kilpatrick, riprap and cove timing. Plus dock-move safety questions (grounding damage, cord/hose, gangway on bare lakebed, anchor tension).</li>
+      <li>Calendar reminder Dec 1: if no Corps reply, call 770-904-3262 (Area 6 direct 770-904-3258). If no Trice reply, call/text.</li>
+    </ul>
+    <h3>How the permit transfers at sale</h3>
+    <ul>
+      <li>USACE permits are nontransferable. The buyer applies for change of ownership; processing about 6 to 8 weeks once complete. Package: recorded deed, plat and site layout, dock drawings, Exhibit C if the dock has power. Local agents cite 14 to 30 days after closing to submit. Fee not published ($485 in our 2023 records vs $835 cited by one brokerage).</li>
+      <li>Lanier buyer agents routinely write permit-verification stipulations. A buyer cannot be guaranteed a permit for a non-compliant dock. Selling as-is with disclosure is legal but will cost more than finishing the work.</li>
+    </ul>
+    <h3>Upstairs moisture</h3>
+    <ul>
+      <li>Likely causes: upstairs balcony/deck flashing and door thresholds, roof-to-wall or skylight flashing, attic air-handler condensate line or pan, bath exhaust venting into the attic, summer condensation on cold ducts or a short-cycling AC.</li>
+      <li>Sequence: independent moisture and mold assessor (not a remediator) with infrared and meter mapping, sampling if stained. Fix the source. Remediate if needed. Post-remediation clearance letter. Keep every invoice for the F301 packet.</li>
+      <li>Then a pre-listing inspection of the whole house (baseline June 30, 2023 Platinum Plus). Add septic pump-and-inspect, pool check, HVAC service.</li>
+    </ul>
+    <h3>Data room to build in January</h3>
+    <ul>
+      <li>24 months Airbnb payouts, expenses, occupancy; Hall County STR license; tax and insurance bills; Corps file and dock drawings; inspections and repair invoices; furnishings inventory.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6. Net proceeds</h2>
+    <p class="note">Assumes Chase payoff $1,107,512 plus per diem (about $224/day), GA transfer tax $1 per $1,000, about $2,000 seller attorney/deed/recording, $1,500 flat-fee MLS and contract review in FSBO cases, agent at 5.5% total. Excludes tax proration, repair credits, pre-listing repairs, and income taxes.</p>
+    <table>
+      <tr><th>Sale price</th><th class="num">(a) Full-service agent 5.5%</th><th class="num">(b) Hybrid: FSBO + 2.5% buyer agent</th><th class="num">(c) FSBO, no buyer agent</th></tr>
+      <tr><td>$1,750,000</td><td class="num">$542,488</td><td class="num"><b>$593,488</b></td><td class="num">$637,238</td></tr>
+      <tr><td>$1,850,000</td><td class="num">$636,888</td><td class="num"><b>$690,888</b></td><td class="num">$737,138</td></tr>
+      <tr><td>$1,950,000</td><td class="num">$731,288</td><td class="num"><b>$788,288</b></td><td class="num">$837,038</td></tr>
+    </table>
+    <ul>
+      <li>Hybrid beats full service by about $51K to $57K at the same price. That edge disappears if execution costs about 3% in price or a worse repair credit.</li>
+      <li>Scenario (c) shrinks the buyer pool. At $1.8M that is usually a pricing mistake, not a savings.</li>
+    </ul>
+    <h3>Taxes (CPA to confirm)</h3>
+    <ul>
+      <li>Investment property bought July 2023 for $1,580,000. Gain is price minus adjusted basis (purchase + improvements minus depreciation taken).</li>
+      <li>Depreciation recapture up to 25% federal, then long-term capital gains. Georgia flat 4.99% for 2026 (HB 463), stepping down about 0.125 points per year from 2027.</li>
+      <li>1031 exchange defers all of it: qualified intermediary engaged before closing, identify within 45 days, close within 180 days, no receipt of proceeds, personal residence does not qualify.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Caveats</h2>
+    <ul>
+      <li>Zillow, Realtor.com, Homes.com and qPublic 2026 values not verified. Square footage conflicts across sources. Comps came from aggregators, not a full MLS pull.</li>
+      <li>Market stats are mostly local brokerage reports. Several independent sources agree on a buyer-leaning 2026 luxury market with strong seasonality.</li>
+      <li>Flat-fee pricing and FMLS surcharges change often; get it in writing.</li>
+      <li>Not legal or tax advice. Georgia closings require a licensed attorney and the tax figures need the CPA.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.panel');
+  function show(id){
+    tabs.forEach(function(t){t.classList.toggle('active',t.dataset.t===id)});
+    panels.forEach(function(p){p.classList.toggle('active',p.id===id)});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.t);try{location.hash=t.dataset.t}catch(e){}})});
+  function fromHash(){var h=(location.hash||'').replace('#','');show(h==='full'?'full':'tldr')}
+  window.addEventListener('hashchange',fromHash);fromHash();
+})();
+</script>
+</body>
+</html>
